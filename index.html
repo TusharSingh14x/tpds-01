@@ -29,21 +29,28 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80">
 
+  <!-- Floating 3D Geometric / Sticker Accents in Background -->
+  <div class="floating-sticker sticker-star" style="top: 15%; left: 4%; transform: rotate(-12deg);">✦</div>
+  <div class="floating-sticker sticker-scissors" style="top: 40%; right: 3%; transform: rotate(15deg);">✂</div>
+  <div class="floating-sticker sticker-sparkle" style="top: 75%; left: 2%; transform: rotate(8deg);">★</div>
+  <div class="floating-sticker sticker-badge-3d" style="top: 85%; right: 4%; transform: rotate(-8deg);">100% CLEAN CODE</div>
+
   <!-- Navbar -->
-  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top glass-nav">
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top glass-slab-nav">
     <div class="container">
       <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home" id="brand-logo">
-        <span class="brand-badge">&lt;TS/&gt;</span>
+        <span class="paper-badge">&lt;TS/&gt;</span>
         <span class="brand-text">Tushar Singh</span>
+        <span class="tape-strip d-none d-sm-inline-block">GEN-Z DEV</span>
       </a>
       
       <div class="d-flex align-items-center order-lg-3 gap-2">
         <!-- Theme Toggle -->
-        <button id="themeToggleBtn" class="btn btn-outline-secondary btn-sm rounded-circle p-2 icon-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+        <button id="themeToggleBtn" class="btn btn-cut-sm rounded-pill p-2 icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
           <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
         </button>
         
-        <a href="#contact" class="btn btn-gradient btn-sm rounded-pill px-3 d-none d-sm-inline-block">Hire Me</a>
+        <a href="#contact" class="btn btn-3d-action btn-sm px-3 d-none d-sm-inline-block">Hire Me ⚡</a>
 
         <button class="navbar-toggler border-0 shadow-none p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -65,7 +72,7 @@
             <a class="nav-link" href="#projects" id="nav-projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#task-manager" id="nav-task-manager">Task Manager Demo</a>
+            <a class="nav-link" href="#task-manager" id="nav-task-manager">Task Manager</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact" id="nav-contact">Contact</a>
@@ -79,52 +86,64 @@
   <header id="home" class="hero-section min-vh-100 d-flex align-items-center position-relative">
     <div class="glow-orb orb-1"></div>
     <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
     
     <div class="container py-5 my-auto position-relative z-1">
       <div class="row align-items-center gy-5">
         <div class="col-lg-7 text-center text-lg-start">
-          <div class="status-pill mb-3 d-inline-flex align-items-center gap-2">
-            <span class="status-dot"></span> Available for New Opportunities
+          <div class="cut-ticket mb-3 d-inline-flex align-items-center gap-2">
+            <span class="ticket-cut-circle-left"></span>
+            <span class="status-dot"></span> OPEN FOR COLLABS & ROLES
+            <span class="ticket-cut-circle-right"></span>
           </div>
-          <h1 class="display-3 fw-bold mb-3 hero-title">
-            Hi, I'm <span class="gradient-text">Tushar Singh</span>
+          <h1 class="display-3 fw-black mb-3 hero-title">
+            Hey, I'm <span class="paper-cut-text">Tushar Singh</span>
           </h1>
-          <h2 class="h3 fw-semibold text-secondary mb-4 hero-subtitle">
-            I build <span id="typedText" class="dynamic-typing">modern web applications</span><span class="cursor">|</span>
+          <h2 class="h3 fw-bold text-secondary mb-4 hero-subtitle">
+            Crafting <span id="typedText" class="dynamic-typing">modern web applications</span><span class="cursor">|</span>
           </h2>
           <p class="lead text-body-secondary mb-4 pe-lg-4">
-            Passionate Software Developer specializing in full-stack web applications, cloud-native deployments, and intuitive digital experiences. Dedicated to writing clean code and shipping impactful software.
+            Full-stack developer bridging high-impact UI with resilient cloud automation. Built with clean version control, modern containerization, and zero-compromise design aesthetics.
           </p>
           <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-            <a href="#projects" class="btn btn-gradient btn-lg px-4 rounded-pill shadow-sm">
-              <i class="bi bi-folder-fill me-2"></i>Explore Projects
+            <a href="#projects" class="btn btn-3d-action btn-lg px-4 shadow-sm">
+              <i class="bi bi-folder2-open me-2"></i>View Work 📂
             </a>
-            <a href="#contact" class="btn btn-outline-custom btn-lg px-4 rounded-pill">
-              <i class="bi bi-chat-dots-fill me-2"></i>Get In Touch
+            <a href="#contact" class="btn btn-glass-slab btn-lg px-4">
+              <i class="bi bi-chat-square-quote-fill me-2"></i>Let's Talk 💬
             </a>
-            <a href="https://github.com/TusharSingh14x" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-lg px-3 rounded-pill" title="GitHub Profile">
+            <a href="https://github.com/TusharSingh14x" target="_blank" rel="noopener noreferrer" class="btn btn-cut-secondary btn-lg px-3" title="GitHub Profile">
               <i class="bi bi-github"></i>
             </a>
           </div>
 
-          <!-- Quick Stats Row -->
-          <div class="row mt-5 pt-3 g-3 text-start">
+          <!-- Cut Scissor Divider line -->
+          <div class="scissor-cut-line my-5">
+            <span class="scissor-icon">✂</span>
+            <span class="scissor-label">CUT ALONG DOTTED LINE</span>
+          </div>
+
+          <!-- Quick Stats Row in Transparent Slabs -->
+          <div class="row g-3 text-start">
             <div class="col-4">
-              <div class="stat-card">
-                <h3 class="stat-number gradient-text mb-0">15+</h3>
-                <span class="stat-label text-body-secondary small">Projects Completed</span>
+              <div class="transparent-slab p-3 text-center position-relative tilt-hover">
+                <span class="washi-tape-pin tape-pink"></span>
+                <h3 class="stat-number genz-neon-pink mb-0">15+</h3>
+                <span class="stat-label text-body-secondary small fw-bold">PROJECTS SHIPPED</span>
               </div>
             </div>
             <div class="col-4">
-              <div class="stat-card">
-                <h3 class="stat-number gradient-text mb-0">100%</h3>
-                <span class="stat-label text-body-secondary small">Git Versioned</span>
+              <div class="transparent-slab p-3 text-center position-relative tilt-hover">
+                <span class="washi-tape-pin tape-lime"></span>
+                <h3 class="stat-number genz-neon-lime mb-0">100%</h3>
+                <span class="stat-label text-body-secondary small fw-bold">GIT VERSIONED</span>
               </div>
             </div>
             <div class="col-4">
-              <div class="stat-card">
-                <h3 class="stat-number gradient-text mb-0">99.9%</h3>
-                <span class="stat-label text-body-secondary small">Uptime & Cloud CI</span>
+              <div class="transparent-slab p-3 text-center position-relative tilt-hover">
+                <span class="washi-tape-pin tape-cyan"></span>
+                <h3 class="stat-number genz-neon-cyan mb-0">0$</h3>
+                <span class="stat-label text-body-secondary small fw-bold">SERVER COST (VERCEL)</span>
               </div>
             </div>
           </div>
@@ -132,25 +151,37 @@
 
         <div class="col-lg-5 text-center">
           <div class="profile-avatar-wrapper position-relative mx-auto">
-            <div class="avatar-glow"></div>
-            <div class="avatar-card glass-card p-4">
-              <div class="avatar-inner mb-3">
+            <!-- 3D Layered Glass Slabs -->
+            <div class="slab-layer-back"></div>
+            <div class="slab-layer-mid"></div>
+            
+            <div class="transparent-slab avatar-card p-4 tilt-3d-card" id="heroTiltCard">
+              <div class="washi-tape tape-corner-top-left">#TOP TALENT</div>
+              <div class="washi-tape tape-corner-top-right">✂ EXPERT</div>
+
+              <div class="paper-cut-inner mb-3">
                 <div class="code-avatar d-flex align-items-center justify-content-center">
-                  <i class="bi bi-code-slash display-1 gradient-text"></i>
+                  <div class="floating-3d-cube">
+                    <i class="bi bi-terminal-fill display-2 genz-neon-lime"></i>
+                  </div>
                 </div>
               </div>
-              <h4 class="fw-bold mb-1">Tushar Singh</h4>
-              <p class="text-body-secondary small mb-3">Computer Science & Engineering</p>
-              <div class="d-flex justify-content-center gap-2 flex-wrap mb-2">
-                <span class="badge bg-primary-subtle text-primary border border-primary-subtle">HTML5 / CSS3</span>
-                <span class="badge bg-success-subtle text-success border border-success-subtle">Bootstrap 5</span>
-                <span class="badge bg-warning-subtle text-warning border border-warning-subtle">JavaScript</span>
-                <span class="badge bg-info-subtle text-info border border-info-subtle">Docker & Git</span>
+
+              <div class="paper-stamp mb-2">VERIFIED DEVELOPER</div>
+              <h4 class="fw-black mb-1">Tushar Singh</h4>
+              <p class="text-body-secondary small mb-3">CSE / DevOps & Web Applications</p>
+
+              <div class="d-flex justify-content-center gap-2 flex-wrap mb-3">
+                <span class="sticker-chip chip-lime">HTML5/CSS3</span>
+                <span class="sticker-chip chip-pink">Bootstrap 5</span>
+                <span class="sticker-chip chip-cyan">JavaScript</span>
+                <span class="sticker-chip chip-purple">Docker & Git</span>
               </div>
-              <div class="mt-3 pt-3 border-top border-secondary-subtle d-flex justify-content-center gap-3">
-                <a href="https://github.com/TusharSingh14x" target="_blank" class="social-link" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                <a href="mailto:contact@tusharsingh.dev" class="social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+
+              <div class="pt-3 border-top border-secondary-subtle d-flex justify-content-center gap-3">
+                <a href="https://github.com/TusharSingh14x" target="_blank" class="social-btn-3d" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn-3d" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:contact@tusharsingh.dev" class="social-btn-3d" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
               </div>
             </div>
           </div>
@@ -163,8 +194,8 @@
   <section id="about" class="section-padding position-relative">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="section-badge">Get to know me</span>
-        <h2 class="display-5 fw-bold section-heading">About <span class="gradient-text">Me</span></h2>
+        <span class="paper-badge-pill">✂ CUT TO THE CHASE</span>
+        <h2 class="display-5 fw-black section-heading">About <span class="paper-cut-text">The Dev</span></h2>
         <p class="text-body-secondary max-w-600 mx-auto">
           Passionate about building scalable web software, automating developer workflows, and crafting user-centric interfaces.
         </p>
@@ -172,9 +203,11 @@
 
       <div class="row g-4 align-items-stretch">
         <div class="col-lg-6">
-          <div class="glass-card p-4 p-md-5 h-100">
-            <h3 class="h4 fw-bold mb-3 d-flex align-items-center gap-2">
-              <i class="bi bi-person-badge-fill text-primary"></i> Who I Am
+          <div class="transparent-slab p-4 p-md-5 h-100 position-relative tilt-hover">
+            <span class="washi-tape tape-corner-top-right">#ORIGIN</span>
+            <div class="scissor-mini-tag mb-2">✂ 01. BIO</div>
+            <h3 class="h4 fw-black mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-person-bounding-box genz-neon-pink"></i> Who I Am
             </h3>
             <p class="text-body-secondary leading-relaxed mb-4">
               I am an aspiring full-stack software engineer with a keen interest in modern web development, containerized infrastructure, and version-controlled collaborative workflows.
@@ -185,27 +218,27 @@
             
             <div class="row g-3 mt-2">
               <div class="col-sm-6">
-                <div class="info-item p-3 rounded-3 bg-body-tertiary">
-                  <div class="text-secondary small">Specialization</div>
-                  <div class="fw-semibold">Full Stack & DevOps</div>
+                <div class="cut-slab-item p-3">
+                  <div class="text-secondary small fw-bold">SPECIALIZATION</div>
+                  <div class="fw-bold genz-neon-lime">Full Stack & DevOps</div>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="info-item p-3 rounded-3 bg-body-tertiary">
-                  <div class="text-secondary small">Degree / Branch</div>
-                  <div class="fw-semibold">B.Tech - CSE / IT</div>
+                <div class="cut-slab-item p-3">
+                  <div class="text-secondary small fw-bold">DEGREE / BRANCH</div>
+                  <div class="fw-bold genz-neon-pink">B.Tech - CSE / IT</div>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="info-item p-3 rounded-3 bg-body-tertiary">
-                  <div class="text-secondary small">Version Control</div>
-                  <div class="fw-semibold">Git, GitHub & Workflows</div>
+                <div class="cut-slab-item p-3">
+                  <div class="text-secondary small fw-bold">VERSION CONTROL</div>
+                  <div class="fw-bold genz-neon-cyan">Git, GitHub & PRs</div>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="info-item p-3 rounded-3 bg-body-tertiary">
-                  <div class="text-secondary small">Cloud & Deployment</div>
-                  <div class="fw-semibold">Vercel, Docker, GitHub Pages</div>
+                <div class="cut-slab-item p-3">
+                  <div class="text-secondary small fw-bold">CLOUD ARCHITECTURE</div>
+                  <div class="fw-bold genz-neon-purple">Vercel, Docker & CI</div>
                 </div>
               </div>
             </div>
@@ -213,34 +246,45 @@
         </div>
 
         <div class="col-lg-6">
-          <div class="glass-card p-4 p-md-5 h-100">
-            <h3 class="h4 fw-bold mb-3 d-flex align-items-center gap-2">
-              <i class="bi bi-award-fill text-warning"></i> Education & Practical Milestones
+          <div class="transparent-slab p-4 p-md-5 h-100 position-relative tilt-hover">
+            <span class="washi-tape tape-corner-top-left">#TIMELINE</span>
+            <div class="scissor-mini-tag mb-2">✂ 02. MILESTONES</div>
+            <h3 class="h4 fw-black mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-patch-check-fill genz-neon-lime"></i> Practical Lab Track
             </h3>
             
-            <div class="timeline position-relative ps-4">
+            <div class="paper-timeline position-relative ps-4">
               <div class="timeline-item mb-4 position-relative">
-                <div class="timeline-dot"></div>
-                <div class="fw-bold fs-6">Practical 1: Git & GitHub Portfolio Deployment</div>
-                <div class="text-primary small mb-1">Version Control & Web Engineering</div>
+                <div class="paper-dot"></div>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="sticker-chip chip-pink small">Practical 1</span>
+                  <span class="fw-bold fs-6">Git & GitHub Portfolio Deployment</span>
+                </div>
+                <div class="text-primary small mb-1 fw-bold">Version Control & Web Engineering</div>
                 <p class="text-body-secondary small mb-0">
                   Engineered this fully responsive portfolio website using Bootstrap 5, implemented branching, pull request workflows, and live cloud deployment on Vercel.
                 </p>
               </div>
 
               <div class="timeline-item mb-4 position-relative">
-                <div class="timeline-dot"></div>
-                <div class="fw-bold fs-6">Practical 2: Dockerization & Cloud Deployment</div>
-                <div class="text-primary small mb-1">Containerization & RESTful Architecture</div>
+                <div class="paper-dot"></div>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="sticker-chip chip-lime small">Practical 2</span>
+                  <span class="fw-bold fs-6">Dockerization & Cloud Deployment</span>
+                </div>
+                <div class="text-primary small mb-1 fw-bold">Containerization & RESTful Architecture</div>
                 <p class="text-body-secondary small mb-0">
                   Architected a Student Task Management Web Application with CRUD operations, Docker multi-stage containerization, port mapping, and resilient cloud integration.
                 </p>
               </div>
 
               <div class="timeline-item position-relative">
-                <div class="timeline-dot"></div>
-                <div class="fw-bold fs-6">Continuous Learning & Open Source</div>
-                <div class="text-primary small mb-1">2024 - Present</div>
+                <div class="paper-dot"></div>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="sticker-chip chip-cyan small">Continuous</span>
+                  <span class="fw-bold fs-6">Open Source & Cloud CI/CD</span>
+                </div>
+                <div class="text-primary small mb-1 fw-bold">2024 - Present</div>
                 <p class="text-body-secondary small mb-0">
                   Actively contributing to repositories, mastering cloud architectures, CI/CD automated deployment pipelines, and modern JavaScript standards.
                 </p>
@@ -253,11 +297,11 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="section-padding bg-body-tertiary position-relative">
+  <section id="skills" class="section-padding position-relative">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="section-badge">Core Competencies</span>
-        <h2 class="display-5 fw-bold section-heading">Skills & <span class="gradient-text">Technologies</span></h2>
+        <span class="paper-badge-pill">✂ TECH ARSENAL</span>
+        <h2 class="display-5 fw-black section-heading">Skills & <span class="paper-cut-text">Stack</span></h2>
         <p class="text-body-secondary max-w-600 mx-auto">
           A toolkit engineered for building robust frontend applications, containerized microservices, and reliable cloud pipelines.
         </p>
@@ -266,41 +310,42 @@
       <div class="row g-4">
         <!-- Frontend Development -->
         <div class="col-md-6 col-lg-4">
-          <div class="glass-card skill-card p-4 h-100">
+          <div class="transparent-slab p-4 h-100 position-relative tilt-hover">
+            <span class="washi-tape-pin tape-lime"></span>
             <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="skill-icon-box bg-primary-subtle text-primary">
-                <i class="bi bi-window-sidebar fs-4"></i>
+              <div class="slab-icon-box bg-lime-soft">
+                <i class="bi bi-window-sidebar fs-4 genz-neon-lime"></i>
               </div>
-              <h4 class="h5 fw-bold mb-0">Frontend Tech</h4>
+              <h4 class="h5 fw-black mb-0">Frontend Tech</h4>
             </div>
             
             <div class="skill-meter mb-3">
               <div class="d-flex justify-content-between small mb-1">
-                <span class="fw-semibold">HTML5 & Semantic SEO</span>
-                <span>95%</span>
+                <span class="fw-bold">HTML5 & Semantic SEO</span>
+                <span class="genz-neon-lime fw-bold">95%</span>
               </div>
-              <div class="progress" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-primary" style="width: 95%"></div>
+              <div class="cut-progress">
+                <div class="cut-progress-bar bg-lime-glow" style="width: 95%"></div>
               </div>
             </div>
 
             <div class="skill-meter mb-3">
               <div class="d-flex justify-content-between small mb-1">
-                <span class="fw-semibold">CSS3 & Bootstrap 5</span>
-                <span>90%</span>
+                <span class="fw-bold">CSS3 & Bootstrap 5</span>
+                <span class="genz-neon-pink fw-bold">90%</span>
               </div>
-              <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-info" style="width: 90%"></div>
+              <div class="cut-progress">
+                <div class="cut-progress-bar bg-pink-glow" style="width: 90%"></div>
               </div>
             </div>
 
             <div class="skill-meter">
               <div class="d-flex justify-content-between small mb-1">
-                <span class="fw-semibold">JavaScript (ES6+) & DOM</span>
-                <span>88%</span>
+                <span class="fw-bold">JavaScript (ES6+) & DOM</span>
+                <span class="genz-neon-cyan fw-bold">88%</span>
               </div>
-              <div class="progress" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-warning" style="width: 88%"></div>
+              <div class="cut-progress">
+                <div class="cut-progress-bar bg-cyan-glow" style="width: 88%"></div>
               </div>
             </div>
           </div>
@@ -308,41 +353,42 @@
 
         <!-- DevOps & Version Control -->
         <div class="col-md-6 col-lg-4">
-          <div class="glass-card skill-card p-4 h-100">
+          <div class="transparent-slab p-4 h-100 position-relative tilt-hover">
+            <span class="washi-tape-pin tape-pink"></span>
             <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="skill-icon-box bg-success-subtle text-success">
-                <i class="bi bi-git fs-4"></i>
+              <div class="slab-icon-box bg-pink-soft">
+                <i class="bi bi-git fs-4 genz-neon-pink"></i>
               </div>
-              <h4 class="h5 fw-bold mb-0">Git & Version Control</h4>
+              <h4 class="h5 fw-black mb-0">Git & Version Control</h4>
             </div>
 
             <div class="skill-meter mb-3">
               <div class="d-flex justify-content-between small mb-1">
-                <span class="fw-semibold">Git Branches, Merging & PRs</span>
-                <span>92%</span>
+                <span class="fw-bold">Git Branches, Merging & PRs</span>
+                <span class="genz-neon-pink fw-bold">92%</span>
               </div>
-              <div class="progress" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-success" style="width: 92%"></div>
+              <div class="cut-progress">
+                <div class="cut-progress-bar bg-pink-glow" style="width: 92%"></div>
               </div>
             </div>
 
             <div class="skill-meter mb-3">
               <div class="d-flex justify-content-between small mb-1">
-                <span class="fw-semibold">GitHub Remote Repos & Pages</span>
-                <span>90%</span>
+                <span class="fw-bold">GitHub Remote Repos & Pages</span>
+                <span class="genz-neon-cyan fw-bold">90%</span>
               </div>
-              <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-primary" style="width: 90%"></div>
+              <div class="cut-progress">
+                <div class="cut-progress-bar bg-cyan-glow" style="width: 90%"></div>
               </div>
             </div>
 
             <div class="skill-meter">
               <div class="d-flex justify-content-between small mb-1">
-                <span class="fw-semibold">Commit Conventions & Log Analysis</span>
-                <span>85%</span>
+                <span class="fw-bold">Commit Conventions & Git Log</span>
+                <span class="genz-neon-lime fw-bold">85%</span>
               </div>
-              <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-secondary" style="width: 85%"></div>
+              <div class="cut-progress">
+                <div class="cut-progress-bar bg-lime-glow" style="width: 85%"></div>
               </div>
             </div>
           </div>
@@ -350,41 +396,42 @@
 
         <!-- Cloud & Backend -->
         <div class="col-md-6 col-lg-4">
-          <div class="glass-card skill-card p-4 h-100">
+          <div class="transparent-slab p-4 h-100 position-relative tilt-hover">
+            <span class="washi-tape-pin tape-cyan"></span>
             <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="skill-icon-box bg-info-subtle text-info">
-                <i class="bi bi-cloud-arrow-up-fill fs-4"></i>
+              <div class="slab-icon-box bg-cyan-soft">
+                <i class="bi bi-cloud-arrow-up-fill fs-4 genz-neon-cyan"></i>
               </div>
-              <h4 class="h5 fw-bold mb-0">Backend & Cloud</h4>
+              <h4 class="h5 fw-black mb-0">Cloud & Docker</h4>
             </div>
 
             <div class="skill-meter mb-3">
               <div class="d-flex justify-content-between small mb-1">
-                <span class="fw-semibold">Docker & Containerization</span>
-                <span>85%</span>
+                <span class="fw-bold">Docker Containerization</span>
+                <span class="genz-neon-cyan fw-bold">85%</span>
               </div>
-              <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-info" style="width: 85%"></div>
+              <div class="cut-progress">
+                <div class="cut-progress-bar bg-cyan-glow" style="width: 85%"></div>
               </div>
             </div>
 
             <div class="skill-meter mb-3">
               <div class="d-flex justify-content-between small mb-1">
-                <span class="fw-semibold">Node.js & Express REST APIs</span>
-                <span>82%</span>
+                <span class="fw-bold">Node.js & Express REST APIs</span>
+                <span class="genz-neon-lime fw-bold">82%</span>
               </div>
-              <div class="progress" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-success" style="width: 82%"></div>
+              <div class="cut-progress">
+                <div class="cut-progress-bar bg-lime-glow" style="width: 82%"></div>
               </div>
             </div>
 
             <div class="skill-meter">
               <div class="d-flex justify-content-between small mb-1">
-                <span class="fw-semibold">Vercel & Static Site Hosting</span>
-                <span>95%</span>
+                <span class="fw-bold">Vercel & Zero-Quota Hosting</span>
+                <span class="genz-neon-pink fw-bold">95%</span>
               </div>
-              <div class="progress" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-primary" style="width: 95%"></div>
+              <div class="cut-progress">
+                <div class="cut-progress-bar bg-pink-glow" style="width: 95%"></div>
               </div>
             </div>
           </div>
@@ -393,16 +440,16 @@
 
       <!-- Tech Pills Marquee / Grid -->
       <div class="d-flex flex-wrap justify-content-center gap-2 mt-4 pt-3">
-        <span class="badge tech-pill"><i class="bi bi-filetype-html me-1"></i> HTML5</span>
-        <span class="badge tech-pill"><i class="bi bi-filetype-css me-1"></i> CSS3</span>
-        <span class="badge tech-pill"><i class="bi bi-bootstrap me-1"></i> Bootstrap 5</span>
-        <span class="badge tech-pill"><i class="bi bi-filetype-js me-1"></i> JavaScript (ES6+)</span>
-        <span class="badge tech-pill"><i class="bi bi-git me-1"></i> Git Version Control</span>
-        <span class="badge tech-pill"><i class="bi bi-github me-1"></i> GitHub Actions & Pages</span>
-        <span class="badge tech-pill"><i class="bi bi-box-seam me-1"></i> Docker Containerization</span>
-        <span class="badge tech-pill"><i class="bi bi-server me-1"></i> Express.js REST APIs</span>
-        <span class="badge tech-pill"><i class="bi bi-triangle me-1"></i> Vercel Deployment</span>
-        <span class="badge tech-pill"><i class="bi bi-database me-1"></i> LocalStorage & Persistence</span>
+        <span class="paper-chip"><i class="bi bi-filetype-html me-1"></i> HTML5</span>
+        <span class="paper-chip"><i class="bi bi-filetype-css me-1"></i> CSS3</span>
+        <span class="paper-chip"><i class="bi bi-bootstrap me-1"></i> Bootstrap 5</span>
+        <span class="paper-chip"><i class="bi bi-filetype-js me-1"></i> JavaScript (ES6+)</span>
+        <span class="paper-chip"><i class="bi bi-git me-1"></i> Git Version Control</span>
+        <span class="paper-chip"><i class="bi bi-github me-1"></i> GitHub Actions & Pages</span>
+        <span class="paper-chip"><i class="bi bi-box-seam me-1"></i> Docker Containerization</span>
+        <span class="paper-chip"><i class="bi bi-server me-1"></i> Express.js REST APIs</span>
+        <span class="paper-chip"><i class="bi bi-triangle me-1"></i> Vercel Deployment</span>
+        <span class="paper-chip"><i class="bi bi-database me-1"></i> LocalStorage & Persistence</span>
       </div>
     </div>
   </section>
@@ -411,47 +458,48 @@
   <section id="projects" class="section-padding position-relative">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="section-badge">Featured Work</span>
-        <h2 class="display-5 fw-bold section-heading">Highlighted <span class="gradient-text">Projects</span></h2>
+        <span class="paper-badge-pill">✂ PORTFOLIO SHOWCASE</span>
+        <h2 class="display-5 fw-black section-heading">Featured <span class="paper-cut-text">Projects</span></h2>
         <p class="text-body-secondary max-w-600 mx-auto">
           Hands-on projects developed with industry-standard practices, version control branches, and cloud readiness.
         </p>
 
         <!-- Project Filter Buttons -->
         <div class="d-flex flex-wrap justify-content-center gap-2 mt-4" id="projectFilter">
-          <button class="btn btn-sm btn-outline-secondary active filter-btn" data-filter="all">All Projects</button>
-          <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="practical">Lab Practicals</button>
-          <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="web">Web Apps</button>
-          <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="devops">DevOps & Cloud</button>
+          <button class="btn btn-cut-filter active filter-btn" data-filter="all">All Projects</button>
+          <button class="btn btn-cut-filter filter-btn" data-filter="practical">Lab Practicals</button>
+          <button class="btn btn-cut-filter filter-btn" data-filter="web">Web Apps</button>
+          <button class="btn btn-cut-filter filter-btn" data-filter="devops">DevOps & Cloud</button>
         </div>
       </div>
 
       <div class="row g-4" id="projectsContainer">
         <!-- Project 1: Portfolio (Practical 1) -->
         <div class="col-md-6 col-lg-4 project-item" data-category="practical web">
-          <div class="glass-card project-card h-100 d-flex flex-column">
+          <div class="transparent-slab project-slab h-100 d-flex flex-column position-relative tilt-hover">
+            <span class="washi-tape tape-corner-top-right">#LAB 01</span>
             <div class="project-header p-4 pb-2">
               <div class="d-flex justify-content-between align-items-center mb-2">
-                <span class="badge bg-primary-subtle text-primary border border-primary-subtle">Practical 1</span>
-                <span class="badge bg-success-subtle text-success">Deployed Live</span>
+                <span class="sticker-chip chip-pink">Practical 1</span>
+                <span class="sticker-chip chip-lime">LIVE ON VERCEL</span>
               </div>
-              <h3 class="h5 fw-bold project-title">Personal Portfolio Website</h3>
+              <h3 class="h5 fw-black project-title">Personal Portfolio Website</h3>
             </div>
             <div class="project-body p-4 pt-0 flex-grow-1">
               <p class="text-body-secondary small mb-3">
                 Responsive portfolio built using HTML5, CSS3, Bootstrap 5, and JavaScript. Managed with Git version control, branching, PRs, and deployed to Vercel and GitHub Pages.
               </p>
               <div class="d-flex flex-wrap gap-1 mb-3">
-                <span class="badge bg-body-tertiary text-body-secondary border">Bootstrap 5</span>
-                <span class="badge bg-body-tertiary text-body-secondary border">Git & GitHub</span>
-                <span class="badge bg-body-tertiary text-body-secondary border">Vercel</span>
+                <span class="badge cut-mini-badge">Bootstrap 5</span>
+                <span class="badge cut-mini-badge">Git & GitHub</span>
+                <span class="badge cut-mini-badge">Vercel</span>
               </div>
             </div>
             <div class="project-footer p-4 pt-0 d-flex justify-content-between align-items-center border-top border-secondary-subtle mt-auto">
-              <a href="#home" class="btn btn-sm btn-outline-primary rounded-pill">
+              <a href="#home" class="btn btn-sm btn-cut-action">
                 <i class="bi bi-eye-fill me-1"></i> Preview
               </a>
-              <a href="https://github.com/TusharSingh14x/tpds-01" target="_blank" class="btn btn-sm btn-outline-secondary rounded-pill">
+              <a href="https://github.com/TusharSingh14x/tpds-01" target="_blank" class="btn btn-sm btn-cut-secondary">
                 <i class="bi bi-github me-1"></i> Source Code
               </a>
             </div>
@@ -460,29 +508,30 @@
 
         <!-- Project 2: Student Task Management (Practical 2) -->
         <div class="col-md-6 col-lg-4 project-item" data-category="practical devops web">
-          <div class="glass-card project-card h-100 d-flex flex-column">
+          <div class="transparent-slab project-slab h-100 d-flex flex-column position-relative tilt-hover">
+            <span class="washi-tape tape-corner-top-left">#LAB 02</span>
             <div class="project-header p-4 pb-2">
               <div class="d-flex justify-content-between align-items-center mb-2">
-                <span class="badge bg-info-subtle text-info border border-info-subtle">Practical 2</span>
-                <span class="badge bg-warning-subtle text-warning">Dockerized</span>
+                <span class="sticker-chip chip-cyan">Practical 2</span>
+                <span class="sticker-chip chip-lime">DOCKER READY</span>
               </div>
-              <h3 class="h5 fw-bold project-title">Student Task Management App</h3>
+              <h3 class="h5 fw-black project-title">Student Task Management App</h3>
             </div>
             <div class="project-body p-4 pt-0 flex-grow-1">
               <p class="text-body-secondary small mb-3">
                 Full-featured Task Management system allowing students to create, view, filter, and delete academic tasks. Includes Docker containerization, REST API architecture, and live interactive UI below.
               </p>
               <div class="d-flex flex-wrap gap-1 mb-3">
-                <span class="badge bg-body-tertiary text-body-secondary border">Node / Express</span>
-                <span class="badge bg-body-tertiary text-body-secondary border">Docker</span>
-                <span class="badge bg-body-tertiary text-body-secondary border">CRUD APIs</span>
+                <span class="badge cut-mini-badge">Node / Express</span>
+                <span class="badge cut-mini-badge">Docker</span>
+                <span class="badge cut-mini-badge">CRUD APIs</span>
               </div>
             </div>
             <div class="project-footer p-4 pt-0 d-flex justify-content-between align-items-center border-top border-secondary-subtle mt-auto">
-              <a href="#task-manager" class="btn btn-sm btn-primary rounded-pill">
-                <i class="bi bi-play-circle-fill me-1"></i> Try Live Demo
+              <a href="#task-manager" class="btn btn-sm btn-3d-action">
+                <i class="bi bi-play-circle-fill me-1"></i> Try Live Demo ⚡
               </a>
-              <a href="https://github.com/TusharSingh14x/tpds-01" target="_blank" class="btn btn-sm btn-outline-secondary rounded-pill">
+              <a href="https://github.com/TusharSingh14x/tpds-01" target="_blank" class="btn btn-sm btn-cut-secondary">
                 <i class="bi bi-github me-1"></i> Repo
               </a>
             </div>
@@ -491,29 +540,30 @@
 
         <!-- Project 3: Cloud DevOps Pipeline -->
         <div class="col-md-6 col-lg-4 project-item" data-category="devops">
-          <div class="glass-card project-card h-100 d-flex flex-column">
+          <div class="transparent-slab project-slab h-100 d-flex flex-column position-relative tilt-hover">
+            <span class="washi-tape tape-corner-top-right">#DEVOPS</span>
             <div class="project-header p-4 pb-2">
               <div class="d-flex justify-content-between align-items-center mb-2">
-                <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle">Cloud DevOps</span>
-                <span class="badge bg-success-subtle text-success">CI/CD</span>
+                <span class="sticker-chip chip-purple">Cloud CI/CD</span>
+                <span class="sticker-chip chip-pink">AUTOMATED</span>
               </div>
-              <h3 class="h5 fw-bold project-title">Automated GitHub Actions CI/CD</h3>
+              <h3 class="h5 fw-black project-title">Automated GitHub Actions CI/CD</h3>
             </div>
             <div class="project-body p-4 pt-0 flex-grow-1">
               <p class="text-body-secondary small mb-3">
                 Continuous integration and continuous deployment workflow that automates tests, builds Docker container images, and publishes directly to static and cloud hosts on git push.
               </p>
               <div class="d-flex flex-wrap gap-1 mb-3">
-                <span class="badge bg-body-tertiary text-body-secondary border">GitHub Actions</span>
-                <span class="badge bg-body-tertiary text-body-secondary border">Docker Hub</span>
-                <span class="badge bg-body-tertiary text-body-secondary border">Vercel Deploy</span>
+                <span class="badge cut-mini-badge">GitHub Actions</span>
+                <span class="badge cut-mini-badge">Docker Hub</span>
+                <span class="badge cut-mini-badge">Vercel Deploy</span>
               </div>
             </div>
             <div class="project-footer p-4 pt-0 d-flex justify-content-between align-items-center border-top border-secondary-subtle mt-auto">
-              <a href="https://github.com/TusharSingh14x" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill">
+              <a href="https://github.com/TusharSingh14x" target="_blank" class="btn btn-sm btn-cut-action">
                 <i class="bi bi-diagram-3-fill me-1"></i> Workflow
               </a>
-              <a href="https://github.com/TusharSingh14x/tpds-01" target="_blank" class="btn btn-sm btn-outline-secondary rounded-pill">
+              <a href="https://github.com/TusharSingh14x/tpds-01" target="_blank" class="btn btn-sm btn-cut-secondary">
                 <i class="bi bi-github me-1"></i> Code
               </a>
             </div>
@@ -523,12 +573,12 @@
     </div>
   </section>
 
-  <!-- Interactive Task Manager Section (Demonstrating Practical 2 on Vercel Zero-Cost) -->
-  <section id="task-manager" class="section-padding bg-body-tertiary position-relative">
+  <!-- Interactive Task Manager Section (Practical 2 Frontend Engine) -->
+  <section id="task-manager" class="section-padding position-relative">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="section-badge text-uppercase">Practical 2 Interactive Demo</span>
-        <h2 class="display-5 fw-bold section-heading">Student Task <span class="gradient-text">Manager</span></h2>
+        <span class="paper-badge-pill">✂ PRACTICAL 2 DEMO</span>
+        <h2 class="display-5 fw-black section-heading">Student Task <span class="paper-cut-text">Manager</span></h2>
         <p class="text-body-secondary max-w-600 mx-auto">
           An interactive, zero-quota-cost task management system running client-side with LocalStorage persistence. Demonstrates CRUD operations and clean UX design.
         </p>
@@ -536,24 +586,30 @@
 
       <div class="row justify-content-center">
         <div class="col-lg-10">
-          <div class="glass-card p-4 p-md-5">
-            <!-- Task Creation Form -->
-            <form id="taskForm" class="row g-3 mb-4">
+          <div class="transparent-slab p-4 p-md-5 position-relative">
+            <span class="washi-tape tape-corner-top-right">#CRUD ENGINE</span>
+            <div class="d-flex align-items-center gap-2 mb-4">
+              <span class="scissor-mini-tag">✂ TASK LAB</span>
+              <span class="badge chip-lime small">PERSISTENT LOCALSTORAGE</span>
+            </div>
+
+            <!-- Task Creation Form in Transparent Slab -->
+            <form id="taskForm" class="row g-3 mb-4 p-3 cut-slab-item">
               <div class="col-md-5">
-                <label for="taskTitle" class="form-label small fw-semibold">Task Name</label>
-                <input type="text" class="form-control" id="taskTitle" placeholder="e.g., Complete Practical 1 Git merge" required>
+                <label for="taskTitle" class="form-label small fw-bold">TASK NAME</label>
+                <input type="text" class="form-control cut-input" id="taskTitle" placeholder="e.g., Complete Practical 1 Git merge" required>
               </div>
               <div class="col-md-3">
-                <label for="taskPriority" class="form-label small fw-semibold">Priority</label>
-                <select class="form-select" id="taskPriority">
-                  <option value="High">High Priority</option>
-                  <option value="Medium" selected>Medium Priority</option>
-                  <option value="Low">Low Priority</option>
+                <label for="taskPriority" class="form-label small fw-bold">PRIORITY</label>
+                <select class="form-select cut-input" id="taskPriority">
+                  <option value="High">High Priority 🔥</option>
+                  <option value="Medium" selected>Medium Priority ⚡</option>
+                  <option value="Low">Low Priority 🌿</option>
                 </select>
               </div>
               <div class="col-md-2">
-                <label for="taskCategory" class="form-label small fw-semibold">Category</label>
-                <select class="form-select" id="taskCategory">
+                <label for="taskCategory" class="form-label small fw-bold">CATEGORY</label>
+                <select class="form-select cut-input" id="taskCategory">
                   <option value="Practical">Practical</option>
                   <option value="Study">Study</option>
                   <option value="DevOps">DevOps</option>
@@ -561,7 +617,7 @@
                 </select>
               </div>
               <div class="col-md-2 d-flex align-items-end">
-                <button type="submit" class="btn btn-gradient w-100">
+                <button type="submit" class="btn btn-3d-action w-100">
                   <i class="bi bi-plus-lg me-1"></i> Add
                 </button>
               </div>
@@ -570,12 +626,12 @@
             <!-- Task Controls & Filters -->
             <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pb-3 mb-3 border-bottom border-secondary-subtle">
               <div class="btn-group btn-group-sm" role="group" id="taskFilterButtons">
-                <button type="button" class="btn btn-outline-secondary active" data-filter="all">All (<span id="countAll">0</span>)</button>
-                <button type="button" class="btn btn-outline-secondary" data-filter="pending">Pending (<span id="countPending">0</span>)</button>
-                <button type="button" class="btn btn-outline-secondary" data-filter="completed">Completed (<span id="countCompleted">0</span>)</button>
+                <button type="button" class="btn btn-cut-filter active" data-filter="all">All (<span id="countAll">0</span>)</button>
+                <button type="button" class="btn btn-cut-filter" data-filter="pending">Pending (<span id="countPending">0</span>)</button>
+                <button type="button" class="btn btn-cut-filter" data-filter="completed">Done (<span id="countCompleted">0</span>)</button>
               </div>
-              <button class="btn btn-sm btn-outline-danger" id="clearAllTasksBtn">
-                <i class="bi bi-trash3 me-1"></i> Clear Completed
+              <button class="btn btn-sm btn-cut-danger" id="clearAllTasksBtn">
+                <i class="bi bi-trash3 me-1"></i> Clear Completed ✂
               </button>
             </div>
 
@@ -589,12 +645,12 @@
     </div>
   </section>
 
-  <!-- Git & GitHub Command Guide Modal / Section -->
+  <!-- Git & GitHub Command Guide Section -->
   <section id="git-workflow" class="section-padding position-relative">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="section-badge">Practical 1 Checklist</span>
-        <h2 class="display-5 fw-bold section-heading">Git & GitHub <span class="gradient-text">Commands</span></h2>
+        <span class="paper-badge-pill">✂ LAB CHECKLIST</span>
+        <h2 class="display-5 fw-black section-heading">Git & GitHub <span class="paper-cut-text">Commands</span></h2>
         <p class="text-body-secondary max-w-600 mx-auto">
           Reference list of all terminal commands executed to satisfy Practical 1 repository creation, branching, merging, and deployment.
         </p>
@@ -602,46 +658,57 @@
 
       <div class="row g-4 justify-content-center">
         <div class="col-lg-10">
-          <div class="glass-card p-4 p-md-5">
+          <div class="transparent-slab p-4 p-md-5 position-relative">
+            <span class="washi-tape tape-corner-top-left">#GIT SPECS</span>
             <div class="row g-4">
               <div class="col-md-6">
-                <h4 class="h5 fw-bold text-primary mb-3"><i class="bi bi-terminal me-2"></i>1. Repository & Main Commit</h4>
-                <div class="terminal-block p-3 rounded-3 font-monospace small mb-3">
-                  <div class="text-secondary"># Initialize repository</div>
-                  <div>$ git init</div>
-                  <div class="text-secondary mt-2"># Add remote GitHub repo</div>
-                  <div>$ git remote add origin https://github.com/TusharSingh14x/tpds-01.git</div>
-                  <div class="text-secondary mt-2"># Stage files & commit</div>
-                  <div>$ git add .</div>
-                  <div>$ git commit -m "feat: initial commit with responsive portfolio"</div>
-                  <div class="text-secondary mt-2"># Set main branch and push</div>
-                  <div>$ git branch -M main</div>
-                  <div>$ git push -u origin main</div>
+                <div class="cut-terminal-wrapper h-100">
+                  <div class="cut-terminal-header d-flex justify-content-between align-items-center">
+                    <span class="small fw-bold font-monospace"><i class="bi bi-terminal me-2 genz-neon-pink"></i>01. REPO & MAIN</span>
+                    <span class="badge chip-pink small">GIT INIT</span>
+                  </div>
+                  <div class="terminal-slab p-3 font-monospace small">
+                    <div class="text-secondary"># Initialize repository</div>
+                    <div class="genz-neon-lime">$ git init</div>
+                    <div class="text-secondary mt-2"># Add remote GitHub repo</div>
+                    <div class="genz-neon-lime">$ git remote add origin https://github.com/TusharSingh14x/tpds-01.git</div>
+                    <div class="text-secondary mt-2"># Stage files & commit</div>
+                    <div class="genz-neon-lime">$ git add .</div>
+                    <div class="genz-neon-lime">$ git commit -m "feat: initial commit"</div>
+                    <div class="text-secondary mt-2"># Set main branch and push</div>
+                    <div class="genz-neon-lime">$ git branch -M main</div>
+                    <div class="genz-neon-lime">$ git push -u origin main</div>
+                  </div>
                 </div>
               </div>
 
               <div class="col-md-6">
-                <h4 class="h5 fw-bold text-success mb-3"><i class="bi bi-git me-2"></i>2. Feature Branching & Pull Request</h4>
-                <div class="terminal-block p-3 rounded-3 font-monospace small mb-3">
-                  <div class="text-secondary"># Create and switch to feature branch</div>
-                  <div>$ git checkout -b feature/task-manager</div>
-                  <div class="text-secondary mt-2"># Add feature files & commit</div>
-                  <div>$ git add .</div>
-                  <div>$ git commit -m "feat: add interactive student task manager"</div>
-                  <div class="text-secondary mt-2"># Push branch to GitHub for Pull Request</div>
-                  <div>$ git push origin feature/task-manager</div>
-                  <div class="text-secondary mt-2"># Merge locally or via GitHub PR</div>
-                  <div>$ git checkout main</div>
-                  <div>$ git merge feature/task-manager</div>
-                  <div>$ git push origin main</div>
+                <div class="cut-terminal-wrapper h-100">
+                  <div class="cut-terminal-header d-flex justify-content-between align-items-center">
+                    <span class="small fw-bold font-monospace"><i class="bi bi-git me-2 genz-neon-lime"></i>02. FEATURE BRANCHING</span>
+                    <span class="badge chip-lime small">PR & MERGE</span>
+                  </div>
+                  <div class="terminal-slab p-3 font-monospace small">
+                    <div class="text-secondary"># Create and switch to feature branch</div>
+                    <div class="genz-neon-cyan">$ git checkout -b feature/task-manager</div>
+                    <div class="text-secondary mt-2"># Add feature files & commit</div>
+                    <div class="genz-neon-cyan">$ git add .</div>
+                    <div class="genz-neon-cyan">$ git commit -m "feat: add task manager"</div>
+                    <div class="text-secondary mt-2"># Push branch to GitHub for Pull Request</div>
+                    <div class="genz-neon-cyan">$ git push origin feature/task-manager</div>
+                    <div class="text-secondary mt-2"># Merge locally or via GitHub PR</div>
+                    <div class="genz-neon-cyan">$ git checkout main</div>
+                    <div class="genz-neon-cyan">$ git merge feature/task-manager</div>
+                    <div class="genz-neon-cyan">$ git push origin main</div>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div class="alert alert-info border-0 rounded-4 mt-3 mb-0 d-flex align-items-center gap-3">
-              <i class="bi bi-info-circle-fill fs-3 text-info"></i>
-              <div>
-                <strong>Deploying to Vercel (Free & Instant):</strong> Run <code>npx vercel</code> or link your GitHub repo <code>TusharSingh14x/tpds-01</code> directly on <a href="https://vercel.com" target="_blank" class="fw-bold text-decoration-underline">vercel.com</a> for automatic static deployment with SSL.
+            <div class="cut-note-callout mt-4 p-3 d-flex align-items-center gap-3">
+              <span class="scissor-sticker">✂</span>
+              <div class="small">
+                <strong class="genz-neon-lime">Deploying to Vercel (Free & Zero Quota):</strong> Link your GitHub repo <code>TusharSingh14x/tpds-01</code> directly on <a href="https://vercel.com" target="_blank" class="fw-bold text-decoration-underline genz-neon-pink">vercel.com</a> for instant SSL-enabled static deployment.
               </div>
             </div>
           </div>
@@ -651,11 +718,11 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section-padding bg-body-tertiary position-relative">
+  <section id="contact" class="section-padding position-relative">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="section-badge">Get In Touch</span>
-        <h2 class="display-5 fw-bold section-heading">Contact <span class="gradient-text">Me</span></h2>
+        <span class="paper-badge-pill">✂ REACH OUT</span>
+        <h2 class="display-5 fw-black section-heading">Contact <span class="paper-cut-text">The Dev</span></h2>
         <p class="text-body-secondary max-w-600 mx-auto">
           Have a question, feedback on the project, or want to collaborate? Send a message directly.
         </p>
@@ -663,43 +730,44 @@
 
       <div class="row g-4 justify-content-center">
         <div class="col-lg-5">
-          <div class="glass-card p-4 p-md-5 h-100">
-            <h3 class="h4 fw-bold mb-4">Contact Information</h3>
+          <div class="transparent-slab p-4 p-md-5 h-100 position-relative tilt-hover">
+            <span class="washi-tape tape-corner-top-left">#DIRECT</span>
+            <h3 class="h4 fw-black mb-4">Contact Info</h3>
             
             <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="contact-icon-box bg-primary-subtle text-primary">
-                <i class="bi bi-geo-alt-fill fs-5"></i>
+              <div class="slab-icon-box bg-pink-soft">
+                <i class="bi bi-geo-alt-fill fs-5 genz-neon-pink"></i>
               </div>
               <div>
-                <div class="text-secondary small">Location</div>
-                <div class="fw-semibold">India</div>
+                <div class="text-secondary small fw-bold">LOCATION</div>
+                <div class="fw-bold">India</div>
               </div>
             </div>
 
             <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="contact-icon-box bg-success-subtle text-success">
-                <i class="bi bi-envelope-fill fs-5"></i>
+              <div class="slab-icon-box bg-lime-soft">
+                <i class="bi bi-envelope-fill fs-5 genz-neon-lime"></i>
               </div>
               <div>
-                <div class="text-secondary small">Email</div>
-                <a href="mailto:contact@tusharsingh.dev" class="fw-semibold text-decoration-none">tusharsingh.dev@gmail.com</a>
+                <div class="text-secondary small fw-bold">EMAIL</div>
+                <a href="mailto:contact@tusharsingh.dev" class="fw-bold text-decoration-none genz-neon-lime">tusharsingh.dev@gmail.com</a>
               </div>
             </div>
 
             <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="contact-icon-box bg-info-subtle text-info">
-                <i class="bi bi-github fs-5"></i>
+              <div class="slab-icon-box bg-cyan-soft">
+                <i class="bi bi-github fs-5 genz-neon-cyan"></i>
               </div>
               <div>
-                <div class="text-secondary small">GitHub Repository</div>
-                <a href="https://github.com/TusharSingh14x/tpds-01" target="_blank" class="fw-semibold text-decoration-none">github.com/TusharSingh14x/tpds-01</a>
+                <div class="text-secondary small fw-bold">GITHUB REPOSITORY</div>
+                <a href="https://github.com/TusharSingh14x/tpds-01" target="_blank" class="fw-bold text-decoration-none genz-neon-cyan">github.com/TusharSingh14x/tpds-01</a>
               </div>
             </div>
 
-            <div class="p-3 rounded-4 bg-body-secondary mt-auto">
+            <div class="cut-slab-item p-3 mt-auto">
               <div class="d-flex align-items-center gap-2 mb-1">
                 <span class="status-dot"></span>
-                <span class="fw-semibold small">Ready to Deploy</span>
+                <span class="fw-bold small">READY TO DEPLOY</span>
               </div>
               <p class="text-body-secondary small mb-0">
                 100% frontend static compatible. Ready for Vercel, Netlify, or GitHub Pages.
@@ -709,28 +777,29 @@
         </div>
 
         <div class="col-lg-6">
-          <div class="glass-card p-4 p-md-5 h-100">
-            <h3 class="h4 fw-bold mb-4">Send a Message</h3>
+          <div class="transparent-slab p-4 p-md-5 h-100 position-relative tilt-hover">
+            <span class="washi-tape tape-corner-top-right">#MESSAGE</span>
+            <h3 class="h4 fw-black mb-4">Send a Note</h3>
             
             <form id="contactForm">
               <div class="mb-3">
-                <label for="contactName" class="form-label small fw-semibold">Your Name</label>
-                <input type="text" class="form-control" id="contactName" placeholder="Tushar Singh" required>
+                <label for="contactName" class="form-label small fw-bold">YOUR NAME</label>
+                <input type="text" class="form-control cut-input" id="contactName" placeholder="Tushar Singh" required>
               </div>
               <div class="mb-3">
-                <label for="contactEmail" class="form-label small fw-semibold">Email Address</label>
-                <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com" required>
+                <label for="contactEmail" class="form-label small fw-bold">EMAIL ADDRESS</label>
+                <input type="email" class="form-control cut-input" id="contactEmail" placeholder="name@example.com" required>
               </div>
               <div class="mb-3">
-                <label for="contactSubject" class="form-label small fw-semibold">Subject</label>
-                <input type="text" class="form-control" id="contactSubject" placeholder="Regarding Practical 1 & 2 Collaboration" required>
+                <label for="contactSubject" class="form-label small fw-bold">SUBJECT</label>
+                <input type="text" class="form-control cut-input" id="contactSubject" placeholder="Regarding Practical 1 & 2 Collaboration" required>
               </div>
               <div class="mb-4">
-                <label for="contactMessage" class="form-label small fw-semibold">Message</label>
-                <textarea class="form-control" id="contactMessage" rows="4" placeholder="Hello, I wanted to connect regarding your project..." required></textarea>
+                <label for="contactMessage" class="form-label small fw-bold">MESSAGE</label>
+                <textarea class="form-control cut-input" id="contactMessage" rows="4" placeholder="Hello, I wanted to connect regarding your project..." required></textarea>
               </div>
-              <button type="submit" class="btn btn-gradient btn-lg w-100 rounded-pill" id="submitContactBtn">
-                <i class="bi bi-send-fill me-2"></i> Send Message
+              <button type="submit" class="btn btn-3d-action btn-lg w-100" id="submitContactBtn">
+                <i class="bi bi-send-fill me-2"></i> Send Message 🚀
               </button>
             </form>
 
